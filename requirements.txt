@@ -1,0 +1,6 @@
+fastai==1.0.58
+torch
+numpy
+pandas
+fastapi
+uvicorn
