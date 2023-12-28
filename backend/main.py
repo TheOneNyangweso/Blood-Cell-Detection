@@ -5,21 +5,22 @@ import numpy as np
 
 app = FastAPI()
 
-# Load the model
-model = YOLO('best.pt')
+# Loading the model
+model = YOLO(
+    '/home/nyangweso/Desktop/Ds_1/Blood-Cell-Detection/data/processed_data/runs/detect/train/weights/best.pt')
 
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
-    # Read the image file
+    # Reading the image file
     contents = await file.read()
     nparr = np.fromstring(contents, np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
-    # Perform object detection
+    # Performing object detection
     results = model(img)
 
-    # Extract the class of the detected object
+    # Extracting the class of the detected object
     detected_class = results.xyxy[0][-1]
 
     return {"class": detected_class}
