@@ -1,0 +1,60 @@
+[ultralytics.engine.results.Results object with attributes:
+
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'Band_Neutrophils', 1: 'Dyplastic_Cell', 2: 'Giant_Platelet', 3: 'Lymphoblast', 4: 'Lymphocytes', 5: 'Neutrophil', 6: 'Promyelocytes', 7: 'monocytes', 8: 'myelocytes', 9: 'not_cell', 10: 'nucleated_RBC'}
+orig_img: array([[[163, 140, 185],
+        [163, 140, 185],
+        [165, 139, 185],
+        ...,
+        [186, 185, 187],
+        [188, 186, 186],
+        [188, 186, 186]],
+
+       [[171, 146, 190],
+        [170, 145, 189],
+        [168, 143, 187],
+        ...,
+        [187, 184, 186],
+        [187, 185, 185],
+        [187, 185, 185]],
+
+       [[181, 156, 194],
+        [179, 154, 192],
+        [174, 149, 187],
+        ...,
+        [188, 183, 185],
+        [188, 183, 185],
+        [187, 182, 184]],
+
+       ...,
+
+       [[158, 120, 172],
+        [158, 120, 172],
+        [160, 121, 173],
+        ...,
+        [191, 184, 197],
+        [192, 185, 198],
+        [192, 185, 198]],
+
+       [[157, 122, 172],
+        [156, 121, 171],
+        [158, 120, 172],
+        ...,
+        [193, 191, 197],
+        [193, 191, 197],
+        [194, 192, 198]],
+
+       [[157, 122, 172],
+        [156, 121, 171],
+        [156, 118, 170],
+        ...,
+        [194, 193, 197],
+        [195, 194, 198],
+        [196, 195, 199]]], dtype=uint8)
+orig_shape: (1440, 1920)
+path: 'image0.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 6.019115447998047, 'inference': 455.9493064880371, 'postprocess': 2.0160675048828125}]
